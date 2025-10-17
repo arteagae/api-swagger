@@ -1,0 +1,31 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "description": "File download from Azure Blob Storage",
+    "version": "1.0.0",
+    "title": "Blob File Download API"
+  },
+  "host": "mrohstoragetechrefdev01.blob.core.windows.net",
+  "basePath": "/mrohstoragetechrefdev01",
+  "schemes": ["https"],
+  "paths": {
+    "/Technical Reference/Work Orders/2025-298/2025-0394872/References/readme.txt": {
+      "get": {
+        "summary": "Download file from Azure Blob Storage",
+        "produces": ["text/plain"],
+        "responses": {
+          "200": {
+            "description": "File retrieved successfully",
+            "schema": {
+              "type": "string"
+            }
+          },
+          "404": {
+            "description": "File not found"
+          }
+        }
+      }
+    }
+  }
+}
+ 
