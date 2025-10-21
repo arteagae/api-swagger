@@ -6,10 +6,10 @@
     "title": "Blob File Download API"
   },
   "host": "mrohstoragetechrefdev01.blob.core.windows.net",
-  "basePath": "/mrohstoragetechrefdev01",
+  "basePath": "",
   "schemes": ["https"],
   "paths": {
-    "/Technical%20Reference/Work%20Orders/2025-298/2025-0394872/References/readme.txt": {
+    "/Technical Reference/Work Orders/2025-298/2025-0394872/References/readme.txt": {
       "get": {
         "summary": "Download file from Azure Blob Storage",
         "produces": ["text/plain"],
