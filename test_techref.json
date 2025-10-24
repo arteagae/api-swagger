@@ -1,0 +1,35 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "description": "File download from Azure Blob Storage",
+    "version": "1.0.0",
+    "title": "Blob File Download API"
+  },
+  "host": "mrohstoragetechrefdev01.blob.core.windows.net",
+  "basePath": "/Technical%20Reference/Work%20Orders/2025-298/2025-0394872/References",
+  "schemes": ["https"],
+  "securityDefinitions": {
+    "OAuth2": {
+      "type": "oauth2",
+      "flow": "application",
+      "tokenUrl": "https://login.microsoftonline.com/a9003f7b-333f-4f47-8738-5597721d582b/oauth2/v2.0/token",
+      "scopes": {
+        "https://storage.azure.com/.default": "Access Azure Blob Storage"
+      }
+    }
+  },
+  "paths": {
+    "/readme.txt": {
+      "get": {
+        "summary": "Download file from Azure Blob Storage",
+        "produces": ["text/plain"],
+        "security": [
+          {
+            "OAuth2": [
+              "https://storage.azure.com/.default"
+            ]
+          }
+        ],
+        "responses": {
+          "200": {
+            "
