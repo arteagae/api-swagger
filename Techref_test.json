@@ -6,7 +6,7 @@
     "title": "Blob File Download API"
   },
   "host": "mrohstoragetechrefdev01.blob.core.windows.net",
-  "basePath": "/Technical%20Reference/Work%20Orders/2025-298/2025-0394872/References",
+  "basePath": "/mrohstoragetechrefdev01/Technical%20Reference/Work%20Orders/2025-298/2025-0394872/References",
   "schemes": ["https"],
   "paths": {
     "/readme.txt": {
